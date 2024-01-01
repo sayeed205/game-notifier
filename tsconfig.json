@@ -1,0 +1,12 @@
+{
+    "extends": "@sindresorhus/tsconfig",
+    "include": ["api"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "compilerOptions": {
+        "outDir": "public",
+        "strict": false,
+        "strictNullChecks": false,
+        "sourceMap": true
+    }
+}

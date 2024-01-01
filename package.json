@@ -1,0 +1,26 @@
+{
+    "name": "game-notifier",
+    "version": "0.0.0",
+    "description": "A telegram bot to get notification about new free games",
+    "main": "api/index.ts",
+    "author": "Sayed Ahmed",
+    "homepage": "https://github.com/sayeed205/game-notifier.git",
+    "scripts": {
+        "dev": "dotenv -- nodemon -e ts -x ts-node src/lib/telegram.ts --trace-deprecation",
+        "prettier": "prettier --single-quote --trailing-comma all --write 'src/**/*.ts'"
+    },
+    "dependencies": {
+        "telegraf": "^4.15.3"
+    },
+    "devDependencies": {
+        "@sindresorhus/tsconfig": "^5.0.0",
+        "@types/debug": "^4.1.12",
+        "@vercel/node": "^3.0.14",
+        "debug": "^4.3.4",
+        "dotenv-cli": "^7.3.0",
+        "nodemon": "^3.0.2",
+        "prettier": "^3.1.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    }
+}
